@@ -6,11 +6,33 @@ body {
 
 
 header {
-    height: 50px;
+    height: 70px;
     width: 960px;
     margin: 30px auto;
-    border-bottom: 8px gray solid;
+    border-bottom: 8px rgb(153, 151, 151) solid;
 }
+
+#left table h1{
+    padding-top: 2px;
+    font-family: 'Pacifico', cursive;
+}
+#left table p{
+    padding-top: 4px;
+    text-transform: uppercase;
+    color: gray;
+}
+
+
+.post h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.post h2 {
+   text-transform: uppercase;
+   color: rgb(119, 116, 116);
+} */
 
 #left {
     float: left;
@@ -19,6 +41,7 @@ header {
 #right {
     float: right;
     width: 480px;
+
 }
 
 td {
@@ -30,11 +53,11 @@ td {
 
 nav {
     float: right;
-    margin-top: 0px;
+    margin-top: -40px;
 }
 
 nav ul li {
-    margin-top: 20px;
+    margin-top: 0px;
     display: inline-block;
 }
 
@@ -47,10 +70,20 @@ nav ul li {
     margin: 20px auto;
     width: 960px;
 }
+
 div button {
     float: right;
     text-transform: uppercase;
+    border: none;
+    padding-bottom: 5px;
+    color: Gray;
+    font-size: 14px;
 }
+div button img{
+    height: 15px;
+    width: 15px;
+}
+
 div h1{
     font-size: 25px;
 }
@@ -59,6 +92,7 @@ div h1{
     color: Gray;
     text-indent: 50px;
     padding-top: 20px;
+    font-size: 120%;
 }
 .content ul {
     padding-top: 20px;
@@ -83,11 +117,8 @@ div h1{
     color: white;
     padding: 10px;
 }
-footer{
-    text-align: center;
-}
 
-p {
+.content p {
     text-indent: 10px;
     max-width: 960px;
     margin-top: 15px;
@@ -96,12 +127,60 @@ p {
 
 .notepad {
     width: 960px;
+    height: 300px;
     background-color: #f5f0ab;
     margin: auto;
     background-image: url(img/notepad.png);
 }
 .notepad ul {
+    margin-top: 30px;
     display: inline-block;
-    padding-left: 150px;   
+    padding-left: 70px;  
+    padding-top: 7px;
+    font-family: 'Patrick Hand', cursive; 
+    font-size: 30px;
+    list-style: circle;
 }
 
+.notepad ul:last-child {
+    float: right;
+    padding-right: 30px;
+}
+
+footer{
+    font-family: Cambria, serif;
+    color:Gray;
+    margin: 20px auto;
+    width: 960px;
+    text-align: center;
+}
+footer img{
+    margin: auto;
+    padding: 30px auto;
+    display:inline-block;
+}
+
+#author {
+    margin: 20px auto;
+    width: 960px;
+    border-top: 8px gray solid;
+}
+#author h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#author p{
+    line-height: 5px;
+    font-family: Cambria, serif;
+    color: Gray;
+    margin-top: 5px;
+}
+
+#author button{
+    margin-top: 50px;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
